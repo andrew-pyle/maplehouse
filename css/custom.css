@@ -5,8 +5,10 @@ Changes:
 3. paypal-button styling
 */
 
-/*TODO:
-1. Change highlight color for "Maple House" from white*/
+#maplehouse-header:hover, #maplehouse-header:focus {
+    color: black;
+    /*background-color: transparent;*/
+}
 
 #paypal-button {
   color: white;
