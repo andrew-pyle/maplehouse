@@ -2,13 +2,24 @@
 Changes:
 1. Pull CSS stylesheet from creative.css rather than creative.min.css
 2. colors for header bar
+3. paypal-button styling
 */
+
+/*TODO:
+1. Change highlight color for "Maple House" from white*/
 
 /*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+#paypal-button {
+  color: white;
+  background-color: #F05F40;
+  text-transform: none;
+}
+
 html,
 body {
   height: 100%;
