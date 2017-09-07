@@ -5,9 +5,12 @@ Changes:
 3. paypal-button styling
 */
 
-#maplehouse-header:hover, #maplehouse-header:focus {
+#maplehouse-header:hover {
     color: black;
-    /*background-color: transparent;*/
+}
+
+#maplehouse-header:focus {
+  color: #F05F40;
 }
 
 #paypal-button {
