@@ -31,6 +31,6 @@ Changes:
   color: black;
 }
 
-header {
+header.masthead {
   background-image: url('../img/maple-cover.jpg');
 }
