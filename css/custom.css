@@ -1,34 +1,26 @@
 /*
 Changes:
 1. colors for header bar
-2. Background image to maple house picture
-3. paypal-button styling
+2. paypal-button styling
+3. Background image to maple house picture
 */
 
-#maplehouse-header:hover {
-    color: black;
-}
+#mainNav .navbar-brand {
+  color: transparent; }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: transparent; }
 
-#maplehouse-header:focus {
-  color: #F05F40;
-}
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: black; }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: rgba(255, 255, 255, 0.7); }
 
 #paypal-button {
   color: white;
   background-color: #F05F40;
   text-transform: none;
-}
-
-.navbar-default .navbar-header .navbar-brand {
-  /*color: rgba(255, 255, 255, 0.7);*/
-  color: #F05F40;
-  background-color: white;
-}
-
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
-  /*color: rgba(255, 255, 255, 0.7);*/
-  color: black;
 }
 
 header.masthead {
