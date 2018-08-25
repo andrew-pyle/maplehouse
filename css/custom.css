@@ -5,6 +5,10 @@ Changes:
 3. Background image to maple house picture
 */
 
+.bg-secondary {
+  background-color: #555555 !important;
+}
+
 #mainNav .navbar-brand {
   color: transparent; }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -39,4 +43,30 @@ div.schedule-wrapper ul {
 
 div.schedule-wrapper h5 {
   text-align: center;
+}
+
+/* Combines with the .service-box class from creative.css to create
+  weekly schedule cards */
+div.schedule-card {
+  border: 2px solid #222;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+div.schedule-card ol {
+  list-style-type: none;
+}
+
+div.schedule-card ol li.tutoring-color {
+  background-color: #F05F40;
+  border-radius: 15px;
+}
+
+div.schedule-card ol li.bible-color {
+  color: white;
+  background-color: #222222;
+}
+
+div.schedule-card ol li.food-color {
+  background-color: white;
 }
