@@ -26,3 +26,17 @@ Changes:
 header.masthead {
   background-image: url('../img/maple-cover.jpg');
 }
+
+div.schedule-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: auto;
+}
+
+div.schedule-wrapper ul {
+  list-style: none;
+}
+
+div.schedule-wrapper h5 {
+  text-align: center;
+}
