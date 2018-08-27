@@ -31,20 +31,6 @@ header.masthead {
   background-image: url('../img/maple-cover.jpg');
 }
 
-div.schedule-wrapper {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: auto;
-}
-
-div.schedule-wrapper ul {
-  list-style: none;
-}
-
-div.schedule-wrapper h5 {
-  text-align: center;
-}
-
 /* Combines with the .service-box class from creative.css to create
   weekly schedule cards */
 div.schedule-card {
@@ -53,20 +39,60 @@ div.schedule-card {
   padding: 10px;
 }
 
-div.schedule-card ol {
-  list-style-type: none;
+div.schedule-grid {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 5px;
 }
 
-div.schedule-card ol li.tutoring-color {
+div.schedule-grid.sunday {
+  grid-template-areas: "time-12 foo"
+                       "time-13 bib"
+                       "time-14 .  ";
+}
+
+div.schedule-grid.tuesday {
+  grid-template-areas: "time-15 tut"
+                       "time-16 tut"
+                       "time-17 tut"
+                       "time-18 .  ";
+}
+
+div.schedule-grid.wednesday {
+  grid-template-areas: "time-15 tut"
+                       "time-16 tut"
+                       "time-17 tut"
+                       "time-18 foo"
+                       "time-19 bib";
+}
+
+div.schedule-grid div.event-tutoring {
+  grid-area: tut;
   background-color: #F05F40;
   border-radius: 15px;
+  padding-left: 10px;
 }
 
-div.schedule-card ol li.bible-color {
-  color: white;
-  background-color: #222222;
-}
-
-div.schedule-card ol li.food-color {
+div.schedule-grid div.event-food {
+  grid-area: foo;
   background-color: white;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+div.schedule-grid div.event-bible {
+  grid-area: bib;
+  background-color: #222222;
+  color: white;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+div.time-marker {
+  grid-area: t;
+}
+
+div.event-marker {
+  grid-area: e;
 }
