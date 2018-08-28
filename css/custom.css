@@ -27,6 +27,10 @@ Changes:
   text-transform: none;
 }
 
+.btn-schedule {
+  margin-top: 20px;
+}
+
 header.masthead {
   background-image: url('../img/maple-cover.jpg');
 }
