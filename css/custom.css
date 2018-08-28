@@ -31,19 +31,52 @@ header.masthead {
   background-image: url('../img/maple-cover.jpg');
 }
 
-/* Combines with the .service-box class from creative.css to create
-  weekly schedule cards */
+div.schedule-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "su"
+                       "tu"
+                       "we";
+  grid-row-gap: 30px;
+  /* padding: 0 10% 0 10%; */
+}
+
+@media only screen and (min-width: 992px) {
+  div.schedule-card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "su tu we";
+    grid-column-gap: 30px;
+  }
+}
+
 div.schedule-card {
-  border: 2px solid #222;
+  background-color: #bfbfbf;
+  /* background-color: white; */
+  /* background-color: #F05F40; */
   border-radius: 15px;
   padding: 10px;
+  box-shadow: -3px 7px 9px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.schedule-card.sunday {
+  grid-area: su;
+}
+
+div.schedule-card.tuesday {
+  grid-area: tu;
+}
+
+div.schedule-card.wednesday {
+  grid-area: we;
 }
 
 div.schedule-grid {
   display: grid;
-  grid-template-columns: 0.25fr 1fr;
+  grid-template-columns: 0.3fr 1fr;
   grid-template-rows: auto;
   grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  padding: 0 10px 0 10px;
 }
 
 div.schedule-grid.sunday {
@@ -70,8 +103,12 @@ div.schedule-grid.wednesday {
 div.schedule-grid div.event-tutoring {
   grid-area: tut;
   background-color: #F05F40;
+  /* background-color: #555555; */
+  color: white;
   border-radius: 15px;
   padding-left: 10px;
+  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.schedule-grid div.event-food {
@@ -79,6 +116,8 @@ div.schedule-grid div.event-food {
   background-color: white;
   border-radius: 15px;
   padding-left: 10px;
+  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.schedule-grid div.event-bible {
@@ -87,6 +126,8 @@ div.schedule-grid div.event-bible {
   color: white;
   border-radius: 15px;
   padding-left: 10px;
+  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.time-marker {
