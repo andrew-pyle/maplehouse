@@ -40,15 +40,26 @@ div.schedule-card-grid {
   grid-template-columns: 1fr;
   grid-template-areas: "su"
                        "tu"
-                       "we";
+                       "we"
+                       "th";
   grid-row-gap: 30px;
+  margin-top: 20px;
   /* padding: 0 10% 0 10%; */
 }
 
 @media only screen and (min-width: 992px) {
   div.schedule-card-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "su tu we";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "su tu we th";
+    grid-column-gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 991px) {
+  div.schedule-card-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "su tu"
+                         "we th";
     grid-column-gap: 30px;
   }
 }
@@ -74,9 +85,14 @@ div.schedule-card.wednesday {
   grid-area: we;
 }
 
+div.schedule-card.thursday {
+  grid-area: th;
+}
+
 div.schedule-grid {
   display: grid;
-  grid-template-columns: 0.15fr 1fr;
+  /* grid-template-columns: 0.15fr 1fr; */
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
@@ -85,13 +101,15 @@ div.schedule-grid {
 
 @media only screen and (min-width: 992px) {
   div.schedule-grid {
-    grid-template-columns: 0.3fr 1fr;
+    /* grid-template-columns: 0.4fr 1fr; */
+    grid-template-columns: auto;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 560px) and (max-width: 991px) {
   div.schedule-grid {
-    grid-template-columns: 0.3fr 1fr;
+    /* grid-template-columns: 0.15fr 1fr; */
+    grid-template-columns: auto;
   }
 }
 
@@ -114,6 +132,13 @@ div.schedule-grid.wednesday {
                        "time-17 tut"
                        "time-18 foo"
                        "time-19 bib";
+}
+
+div.schedule-grid.thursday {
+  grid-template-areas: "time-15 tut"
+                       "time-16 tut"
+                       "time-17 tut"
+                       "time-18 .  ";
 }
 
 div.schedule-grid div.event-tutoring {
