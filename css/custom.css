@@ -141,34 +141,29 @@ div.schedule-grid.thursday {
                        "time-18 .  ";
 }
 
-div.schedule-grid div.event-tutoring {
+div.schedule-grid div.event {
+  border-radius: 15px;
+  padding-left: 10px;
+  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.schedule-grid div.tutoring {
   grid-area: tut;
   background-color: #F05F40;
   /* background-color: #555555; */
   color: white;
-  border-radius: 15px;
-  padding-left: 10px;
-  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.schedule-grid div.event-food {
+div.schedule-grid div.food {
   grid-area: foo;
   background-color: white;
-  border-radius: 15px;
-  padding-left: 10px;
-  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.schedule-grid div.event-bible {
+div.schedule-grid div.bible {
   grid-area: bib;
   background-color: #222222;
   color: white;
-  border-radius: 15px;
-  padding-left: 10px;
-  /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.time-marker {
