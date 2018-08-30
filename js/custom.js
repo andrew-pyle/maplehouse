@@ -4,27 +4,18 @@
 
   // Custom Scroll Reveal for weekly schedule
   // Use global variable `sr` from creative.js if availabl
-  if (sr === undefined) {
-    sr = ScrollReveal();
+  if (window.sr === undefined) {
+    window.sr = ScrollReveal();
   } else {
-    sr.reveal('div.schedule-card.sunday', {
-      delay: 0,
+    sr.reveal('div.schedule-card', {
       duration: 600,
       scale: 0.3,
       distance: '0px'
-    });
-    sr.reveal('div.schedule-card.tuesday', {
-      delay: 300,
-      duration: 600,
-      scale: 0.3,
-      distance: '0px'
-    });
-    sr.reveal('div.schedule-card.wednesday', {
-      delay: 600,
-      duration: 600,
-      scale: 0.3,
-      distance: '0px'
-    });
+    }, 200);
+    // Above integer passed to ScrollSync.reveal() seems to be undocumented
+    // behavior. Sets an interval between the animation of each object with
+    // the specified CSS selector.
+
   }
 
 })(jQuery); // End of use strict
