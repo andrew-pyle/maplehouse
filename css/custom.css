@@ -147,3 +147,8 @@ div.schedule-grid div.bible {
   background-color: #222222;
   color: white;
 }
+
+/* Change icons wrapped in <a> tags back to black */
+section#contact a i {
+  color: #222;
+}
