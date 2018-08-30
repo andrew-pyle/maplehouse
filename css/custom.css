@@ -44,22 +44,22 @@ div.schedule-card-grid {
                        "th";
   grid-row-gap: 30px;
   margin-top: 20px;
-  /* padding: 0 10% 0 10%; */
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  div.schedule-card-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "su tu"
+                         "we th";
+    grid-column-gap: 30px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   div.schedule-card-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "su tu we th";
-    grid-column-gap: 30px;
-  }
-}
-
-@media only screen and (min-width: 770px) and (max-width: 991px) {
-  div.schedule-card-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "su tu"
-                         "we th";
     grid-column-gap: 30px;
   }
 }
@@ -92,24 +92,24 @@ div.schedule-card.thursday {
 div.schedule-grid {
   display: grid;
   /* grid-template-columns: 0.15fr 1fr; */
-  grid-template-columns: auto;
+  grid-template-columns: max-content auto;
   grid-template-rows: auto;
   grid-row-gap: 5px;
-  grid-column-gap: 5px;
+  grid-column-gap: 15px;
   padding: 0 10px 0 10px;
 }
 
 @media only screen and (min-width: 992px) {
   div.schedule-grid {
     /* grid-template-columns: 0.4fr 1fr; */
-    grid-template-columns: auto;
+    /* grid-template-columns: auto; */
   }
 }
 
 @media only screen and (min-width: 560px) and (max-width: 991px) {
   div.schedule-grid {
     /* grid-template-columns: 0.15fr 1fr; */
-    grid-template-columns: auto;
+    /* grid-template-columns: auto; */
   }
 }
 
