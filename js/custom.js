@@ -1,3 +1,5 @@
+// Copyright (C) 2018 Maple House 501(c)3
+
 // Style of creative.js used here
 (function($) {
   "use strict"; // Start of use strict

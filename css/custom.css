@@ -1,22 +1,17 @@
-/*
-Changes:
-1. colors for header bar
-2. paypal-button styling
-3. Background image to maple house picture
-*/
+/* Copyright (C) 2018 Maple House 501(c)3 */
 
 .bg-secondary {
   background-color: #555555 !important;
 }
 
 #mainNav .navbar-brand {
-  color: transparent; }
+  color: white; }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: transparent; }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  color: black; }
+  color: white; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: rgba(255, 255, 255, 0.7); }
