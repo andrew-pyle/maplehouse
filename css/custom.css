@@ -27,6 +27,7 @@ Changes:
   text-transform: none;
 }
 
+/* Content above doesn't have margins applied */
 .btn-schedule {
   margin-top: 20px;
 }
@@ -99,20 +100,6 @@ div.schedule-grid {
   padding: 0 10px 0 10px;
 }
 
-@media only screen and (min-width: 992px) {
-  div.schedule-grid {
-    /* grid-template-columns: 0.4fr 1fr; */
-    /* grid-template-columns: auto; */
-  }
-}
-
-@media only screen and (min-width: 560px) and (max-width: 991px) {
-  div.schedule-grid {
-    /* grid-template-columns: 0.15fr 1fr; */
-    /* grid-template-columns: auto; */
-  }
-}
-
 div.schedule-grid.sunday {
   grid-template-areas: "time-12 foo"
                        "time-13 bib"
@@ -164,12 +151,4 @@ div.schedule-grid div.bible {
   grid-area: bib;
   background-color: #222222;
   color: white;
-}
-
-div.time-marker {
-  grid-area: t;
-}
-
-div.event-marker {
-  grid-area: e;
 }
