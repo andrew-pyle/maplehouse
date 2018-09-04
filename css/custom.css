@@ -160,3 +160,10 @@ div.schedule-grid div.bible {
 section#contact a i {
   color: #222;
 }
+
+/* Special class to apply the Bootstrap inline form style to a single input
+   See: https://getbootstrap.com/docs/4.0/components/forms/#inline-forms */
+input.input-inline {
+  display: inline-flex;
+  width: auto;
+}

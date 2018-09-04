@@ -205,6 +205,215 @@
       </div>
     </section>
 
+    <section id="tutor-signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Sign Up for Tutoring!</h2>
+            <hr class="primary">
+          </div>
+        </div>
+        <form>
+          <div class="card my-2">
+            <div class="card-header">Child Information</div>
+            <div class="card-body">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="child-first-name">Child's Name</label>
+                  <input id="child-first-name"
+                    type="text"
+                    class="form-control"
+                    aria-describedby=""
+                    placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="child-last-name">Child's Last Name</label>
+                  <input id="child-last-name"
+                    type="text"
+                    class="form-control"
+                    aria-describedby=""
+                    placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-4">
+                  <label for="child-grade">Child's Grade</label>
+                  <select id="child-grade"
+                    type="number"
+                    class="form-control custom-select"
+                    aria-describedby="">
+                    <option>Kindergarten</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="child-dob">Child's Date of Birth</label>
+                  <input id="child-dob"
+                    type="date"
+                    class="form-control"
+                    aria-describedby=""
+                    placeholder="Child's Date of Birth" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="emergency-contact">Emergency Contact</label>
+                  <input id="emergency-contact"
+                    type="number"
+                    class="form-control"
+                    placeholder="1234567890"
+                    aria-describedby="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-2">
+            <div class="card-header">Guardian Information</div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Primary Guardian</p>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <!-- <label for="guardian-1-first-name">Guardian's First Name</label> -->
+                  <input id="guardian-1-first-name"
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-4">
+                  <!-- <label for="guardian-1-last-name">Guardian's Last Name</label> -->
+                  <input id="guardian-1-last-name"
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-4">
+                  <!-- <label for="guardian-1-phone">Guardian's Phone</label> -->
+                  <input id="guardian-1-phone"
+                    type="number"
+                    class="form-control"
+                    placeholder="1234567890"
+                    aria-describedby="" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="guardian-2-first-name">Other Guardian's First Name</label>
+                  <input id="guardian-2-first-name"
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="guardian-2-last-name">Other Guardian's Last Name</label>
+                  <input id="guardian-2-last-name"
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="guardian-2-phone">Other Guardian's Phone</label>
+                  <input id="guardian-2-phone"
+                    type="number"
+                    class="form-control"
+                    placeholder="1234567890"
+                    aria-describedby="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Needs add another feature -->
+          <div class="card my-2">
+            <div class="card-header">Pick-Up Authorization</div>
+            <div class="card-body">
+              <div class="form-group">
+                Who is authorized to pick-up your child?
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <input id="child-pickup-1-name"
+                    type="text"
+                    class="form-control"
+                    aria-describedby=""
+                    placeholder="Full Name" />
+                </div>
+                <div class="form-group col-md-4">
+                  <input id="child-pickup-1-phone"
+                    type="number"
+                    class="form-control"
+                    placeholder="Phone"
+                    aria-describedby="" />
+                </div>
+                <div class="form-group col-md-4">
+                  <input id="child-pickup-1-relationship"
+                    type="number"
+                    class="form-control"
+                    placeholder="Relationship"
+                    aria-describedby="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-2">
+            <div class="card-header">Special Information</div>
+            <div class="card-body">
+              <div class="form-row">
+                <div class="col">
+                  <label for="child-allergies">Child's Allergies and/or Medications</label>
+                  <textarea id="child-allergies"
+                    class="form-control"
+                    placeholder="Write anything you want us to know! 😀"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="child-info">Is there anything else we should know about your child?</label>
+                  <textarea id="child-info"
+                    class="form-control"
+                    placeholder="Special needs, school struggles, etc."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-2">
+            <div class="card-header">Will You sign our Photo Release?</div>
+            <div class="card-body">
+              <div class="form-row">
+                <p>
+                  I,
+                  <input id="photo-release-name"
+                    type="text"
+                    class="form-control input-inline"
+                    aria-describedby=""
+                    placeholder="Full Name" />
+                  grant permission to The Maple House and its representatives the right to take photos of my child. I agree that The Maple House can use such photos for any lawful purpose (including use on facebook page, website, roster, etc.)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12 text-center">
+              <button type="button" class="btn btn-primary btn-xl">
+                Sign Up!
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- _____________________ -->
+
 <!-- Portfolio: Replaced with Give now -->
     <!-- <section class="p-0" id="portfolio">
       <div class="container-fluid">
