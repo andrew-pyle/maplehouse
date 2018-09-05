@@ -160,3 +160,9 @@ div.schedule-grid div.bible {
 section#contact a i {
   color: #222;
 }
+
+.btn-collapse {
+  background-color: inherit;
+  border: none;
+  border-radius: 15px;
+}
