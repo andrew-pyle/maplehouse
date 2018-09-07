@@ -20,4 +20,31 @@
 
   }
 
+  // Tab Content
+
+
+  var tabElements = Array.from(document.getElementsByClassName('tab'));
+  var tabContentElements = Array.from(
+    document.getElementsByClassName('tab-content')
+  );
+
+  function toggleTabContent(event, idToShow, tabElements, tabContentElements) {
+    // Hide all elements except the one which has the id passed as argument
+    tabContentElements.forEach(function(section) {
+      if (section.id !== idToShow) {
+        section.style.display = 'none';
+      } else {
+        section.style.display = 'block';
+      }
+    })
+
+    // Remove "active" class from all tabs
+    tabElements.forEach(function(tab) {
+      tab.classList.remove('active')
+    })
+
+    // Add "active" class to clicked tab element
+    event.currentTarget.classList.add('active')
+  }
+
 })(jQuery); // End of use strict
