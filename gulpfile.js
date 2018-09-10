@@ -1,3 +1,9 @@
+// Adapted from Start Bootstrap - Creative
+// (https://startbootstrap.com/template-overviews/creative)
+// Copyright 2013-2018 Start Bootstrap
+// Licensed under MIT
+// (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
