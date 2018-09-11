@@ -1,5 +1,12 @@
 /* Copyright (C) 2018 Maple House 501(c)3 */
 
+
+/* Bootstrap Breakpoints
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px; */
+
 .bg-secondary {
   background-color: #555555 !important;
 }
@@ -207,4 +214,39 @@ section#contact a i {
 /* Limit width of Google Map Embed */
 .google-map {
   max-width: 700px;
+}
+
+/* small */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tab p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 335px) and (max-width: 767px) {
+  .icon-font {
+    font-size: 1.2rem;
+  }
+  i.icon-font {
+    font-size: 3rem;
+  }
+}
+
+/* extra-small */
+@media only screen and (max-width: 575px) {
+  .tab p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .icon-font {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  i.icon-font {
+    font-size: 1.75rem;
+  }
 }
