@@ -113,7 +113,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center tab">
+          <!-- <div class="col-lg-3 col-md-6 text-center tab">
             <div class="service-box">
               <div class="row">
                 <div class="col">
@@ -123,57 +123,62 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center tab">
+          </div> -->
+          <div id="tutoring" class="col-lg-3 col-md-6 mr-3 ml-3 text-center tab">
             <div class="service-box">
               <div class="row">
                 <div class="col">
-                  <i class="fa fa-4x fa-pencil-square-o text-primary sr-icons"></i>
+                  <i class="fa fa-4x fa-pencil-square-o alt-primary sr-icons"></i>
                   <h3>After School</h3>
-                  <p class="text-muted">Kids come for homework help and just to hang out.</p>
+                  <p class="alt-muted">Kids come for homework help and just to hang out.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center tab">
+          <div id="garden" class="col-lg-3 col-md-6 text-center tab">
             <div class="service-box">
-              <i class="fa fa-4x fa-pagelines text-primary sr-icons"></i>
+              <i class="fa fa-4x fa-pagelines alt-primary sr-icons"></i>
               <h3>Community Garden</h3>
-              <p class="text-muted">Planting, tending, and harvesting together.</p>
+              <p class="alt-muted">Planting, tending, and harvesting together.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center tab">
+          <div id="worship" class="col-lg-3 col-md-6 text-center tab">
             <div class="service-box">
-              <i class="fa fa-4x fa-book text-primary sr-icons"></i>
+              <i class="fa fa-4x fa-book alt-primary sr-icons"></i>
               <h3>Christian Worship</h3>
-              <p class="text-muted">Meet together for worship and meals.</p>
+              <p class="alt-muted">Meet together for worship and meals.</p>
             </div>
           </div>
-          <!-- <div class="col-lg-3 col-md-6 text-center">
+          <div id="schedule" class="col-lg-3 col-md-6 text-center tab">
             <div class="service-box">
-              <i class="fa fa-4x fa-calendar text-primary sr-icons"></i>
-              <h3>Weekly Schedule</h3>
-              <p class="text-muted">See our weekly schedule</p>
+              <div class="row">
+                <div class="col">
+                  <i class="fa fa-4x fa-calendar alt-primary sr-icons"></i>
+                  <h3>Weekly Schedule</h3>
+                  <p class="alt-muted">See our weekly schedule</p>
+                </div>
+              </div>
+
             </div>
-          </div> -->
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
           </div>
         </div>
         <div class="row">
+          <div id="tab-arrow-tutoring" class="col-lg-3 col-md-6 text-center tab-arrow">
+            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div id="tab-arrow-garden" class="col-lg-3 col-md-6 text-center tab-arrow">
+            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div id="tab-arrow-worship" class="col-lg-3 col-md-6 text-center tab-arrow">
+            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <div id="tab-arrow-schedule" class="col-lg-3 col-md-6 text-center tab-arrow">
+            <i class="fa fa-3x fa-angle-down" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div id="tab-row" class="row">
           <div class="col">
-            <section id="join" class="bg-secondary text-center tab-content">
+            <!-- <section id="join" class="bg-secondary text-center tab-content">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12">
@@ -182,8 +187,8 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section id="signup-tutoring" class="bg-secondary text-center  tab-content">
+            </section> -->
+            <section id="tab-content-tutoring" class="bg-secondary text-center  tab-content">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12">
@@ -207,7 +212,7 @@
                 </div>
               </div>
             </section>
-            <section id="join-garden" class="bg-secondary text-center collapse  tab-content">
+            <section id="tab-content-garden" class="bg-secondary text-center collapse  tab-content">
               <div class="container">
                 <div class="row">
                   <div class="col">
@@ -217,7 +222,7 @@
                 </div>
               </div>
             </section>
-            <section id="join-worship" class="bg-secondary text-center  tab-content">
+            <section id="tab-content-worship" class="bg-secondary text-center  tab-content">
               <div class="container">
                 <div class="row">
                   <div class="col">
@@ -227,12 +232,70 @@
                 </div>
               </div>
             </section>
+            <section id="tab-content-schedule" class="bg-secondary tab-content">
+              <div class="container">
+                <div class="row text-center">
+                  <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-white">Weekly Schedule</h2>
+                    <hr class="light">
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="schedule-card-grid">
+                  <div class="schedule-card sunday">
+                    <h2>Sunday</h2>
+                    <div class="schedule-grid sunday">
+                      <div class="time-12">12 PM</div>
+                      <div class="time-13">1 PM</div>
+                      <div class="time-14">2 PM</div>
+                      <div class="event food">Lunch</div>
+                      <div class="event bible">Bible Study</div>
+                    </div>
+                  </div>
+                  <div class="schedule-card tuesday">
+                    <h2>Tuesday</h2>
+                    <div class="schedule-grid tuesday">
+                      <div class="time-15">3 PM</div>
+                      <div class="time-16">4 PM</div>
+                      <div class="time-17">5 PM</div>
+                      <div class="time-18">6 PM</div>
+                      <div class="event tutoring">Tutoring</div>
+                    </div>
+                  </div>
+                  <div class="schedule-card wednesday">
+                    <h2>Wednesday</h2>
+                    <div class="schedule-grid wednesday">
+                      <div class="time-15">3 PM</div>
+                      <div class="time-16">4 PM</div>
+                      <div class="time-17">5 PM</div>
+                      <div class="time-18">6 PM</div>
+                      <div class="time-19">7 PM</div>
+                      <div class="time-20">8 PM</div>
+                      <div class="event tutoring">Tutoring</div>
+                      <div class="event food">Dinner</div>
+                      <div class="event bible">Bible Stories</div>
+                    </div>
+                  </div>
+                  <div class="schedule-card thursday">
+                    <h2>Thursday</h2>
+                    <div class="schedule-grid thursday">
+                      <div class="time-15">3 PM</div>
+                      <div class="time-16">4 PM</div>
+                      <div class="time-17">5 PM</div>
+                      <div class="time-18">6 PM</div>
+                      <div class="event tutoring">Tutoring</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="join" class="bg-secondary text-center">
+    <!-- <section id="join" class="bg-secondary text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -344,7 +407,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 <!-- Portfolio: Replaced with Give now -->
     <!-- <section class="p-0" id="portfolio">

@@ -47,7 +47,7 @@ div.schedule-card-grid {
                        "we"
                        "th";
   grid-row-gap: 30px;
-  margin-top: 20px;
+  margin: 20px 10px 20px 10px;
 }
 
 
@@ -161,16 +161,23 @@ section#contact a i {
   color: #222;
 }
 
-.tab .active {
-  border: 2px solid black;
+.tab.active-tab {
+  background-color: #F05F40; /* FIXME: SCSS bg-primary */
+  color: white;
+  border-radius: 5px;
 }
 
-div.tab.active i.fa-angle-down:before {
-  visibility: hidden !important;
+.tab.active-tab p {
+  color: #222;
+}
+
+.tab.active-tab i {
+  color: rgba(255, 255, 255, 0.7); /* FIXME: SCSS text-faded */
 }
 
 .tab-content {
   /* -webkit-animation: fadeEffect 1s; */
+  border-radius: 10px;
   animation: fadeEffect 1s;
 }
 
@@ -182,4 +189,17 @@ div.tab.active i.fa-angle-down:before {
 @keyframes fadeEffect {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Same as .text-... but without !important */
+.alt-primary {
+  color: #f05f40;
+}
+
+.alt-muted {
+  color: #6c757d;
+}
+
+.alt-faded {
+  color: rgba(255, 255, 255, 0.7);
 }
