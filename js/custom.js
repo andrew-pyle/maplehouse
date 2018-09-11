@@ -4,22 +4,6 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  // // Custom Scroll Reveal for weekly schedule
-  // // Use global variable `sr` from creative.js if availabl
-  // if (window.sr === undefined) {
-  //   window.sr = ScrollReveal();
-  // } else {
-  //   sr.reveal('div.schedule-card', {
-  //     duration: 600,
-  //     scale: 0.3,
-  //     distance: '0px'
-  //   }, 200);
-  //   // Above integer passed to ScrollSync.reveal() seems to be undocumented
-  //   // behavior. Sets an interval between the animation of each object with
-  //   // the specified CSS selector.
-  //
-  // }
-
   // Tab Content
   var tabContentIdPrefix = 'tab-content-';
   var tabsJquery = $('.tab');
