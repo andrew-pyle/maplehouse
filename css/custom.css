@@ -216,37 +216,39 @@ section#contact a i {
   max-width: 700px;
 }
 
-/* small */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* Text Disappears at Bootstrap -md */
+@media only screen and (max-width: 767px) {
   .tab p {
     display: none;
   }
 }
 
-@media only screen and (min-width: 335px) and (max-width: 767px) {
-  .icon-font {
-    font-size: 1.2rem;
-  }
+/* Scale icons down for Bootstrap -md & -sm but not -xs */
+@media only screen and (max-width: 767px) {
   i.icon-font {
     font-size: 3rem;
   }
-}
-
-/* extra-small */
-@media only screen and (max-width: 575px) {
-  .tab p {
-    display: none;
+  i.fa-angle-down {
+    font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: 430px) {
-  .icon-font {
-    font-size: 0.8rem;
+/* Scale text size down */
+@media only screen and (min-width: 431px) and (max-width: 767px) {
+  h3.icon-font {
+    font-size: 1.2rem; /* Bootstrap -sm */
   }
 }
 
-@media only screen and (max-width: 334px) {
-  i.icon-font {
-    font-size: 1.75rem;
+
+@media only screen and (min-width: 369px) and (max-width: 430px) {
+  h3.icon-font {
+    font-size: 1rem; /* Text overlaps */
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h3.icon-font {
+    font-size: 0.8rem; /* Text overlaps again */
   }
 }
