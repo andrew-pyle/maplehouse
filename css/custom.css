@@ -234,14 +234,14 @@ section#contact a i {
 }
 
 /* Scale text size down */
-@media only screen and (min-width: 431px) and (max-width: 767px) {
+@media only screen and (min-width: 500px) and (max-width: 767px) {
   h3.icon-font {
     font-size: 1.2rem; /* Bootstrap -sm */
   }
 }
 
 
-@media only screen and (min-width: 369px) and (max-width: 430px) {
+@media only screen and (min-width: 369px) and (max-width: 499px) {
   h3.icon-font {
     font-size: 1rem; /* Text overlaps */
   }
