@@ -183,15 +183,9 @@ section#contact a i {
 }
 
 .tab-content {
-  /* -webkit-animation: fadeEffect 1s; */
   border-radius: 10px;
   animation: fadeEffect 1s;
 }
-
-/* @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-} */
 
 @keyframes fadeEffect {
   from { opacity: 0; }
