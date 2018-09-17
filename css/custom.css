@@ -246,3 +246,8 @@ section#contact a i {
     font-size: 0.8rem; /* Text overlaps again */
   }
 }
+
+/* Unhighlight accordion links */
+button.collapsed {
+  background-color: transparent;
+}
