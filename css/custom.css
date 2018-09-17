@@ -11,6 +11,10 @@
   background-color: #555555 !important;
 }
 
+.bg-dark-grey {
+  background-color: #484848;
+}
+
 img.navbar-logo {
   max-height: 60px;
 }
@@ -250,4 +254,9 @@ section#contact a i {
 /* Unhighlight accordion links */
 button.collapsed {
   background-color: transparent;
+}
+
+#accordion-tutoring .row.card-header {
+  margin-left: 0;
+  margin-right: 0;
 }
