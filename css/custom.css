@@ -55,8 +55,7 @@ div.schedule-card-grid {
   grid-template-columns: 1fr;
   grid-template-areas: "su"
                        "tu"
-                       "we"
-                       "th";
+                       "we";
   grid-row-gap: 30px;
   margin: 20px 10px 20px 10px;
 }
@@ -65,16 +64,16 @@ div.schedule-card-grid {
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   div.schedule-card-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "su tu"
-                         "we th";
+    grid-template-areas: "su . "
+                         "tu we";
     grid-column-gap: 30px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   div.schedule-card-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "su tu we th";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "su tu we";
     grid-column-gap: 30px;
   }
 }
