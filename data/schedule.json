@@ -1,0 +1,18 @@
+{
+    "Sunday": {
+        "12": "Lunch",
+        "13": "Bible Study"
+    },
+    "Tuesday": {
+        "15": "Tutoring",
+        "16": "Tutoring",
+        "17": "Tutoring"
+    },
+    "Wednesday": {
+        "15": "Tutoring",
+        "16": "Tutoring",
+        "17": "Tutoring",
+        "18": "Dinner",
+        "19": "Bible Stories"
+    }
+}
