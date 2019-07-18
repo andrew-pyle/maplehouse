@@ -13,6 +13,8 @@ var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 const imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
+var babel = require('gulp-babel');
+var sourcemaps = require('gulp-sourcemaps')
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -97,6 +99,20 @@ gulp.task('css:minify', ['css:compile'], function() {
 // CSS
 gulp.task('css', ['css:compile', 'css:minify']);
 
+// Transpile JSX
+gulp.task('jsx', function () {
+  return gulp.src('./jsx/**/*.jsx')
+    .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: [
+        ["@babel/preset-env", { modules: false }],
+        "@babel/preset-react"
+      ]
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./mjs'));
+})
+
 // Minify JavaScript
 gulp.task('js:minify', function() {
   return gulp.src([
@@ -112,7 +128,7 @@ gulp.task('js:minify', function() {
 });
 
 // JS
-gulp.task('js', ['js:minify']);
+gulp.task('js', ['jsx', 'js:minify']);
 
 // Compresses images
 gulp.task('compress-img', function() {
@@ -134,9 +150,10 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task
-gulp.task('dev', ['css', 'js', 'browserSync'], function() {
+gulp.task('dev', ['css', 'js', 'jsx', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./css/*.css', ['css:minify']);
   gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./jsx/*.jsx', ['jsx']);
   gulp.watch('./*.html', browserSync.reload);
 });
