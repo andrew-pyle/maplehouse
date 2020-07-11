@@ -6,3 +6,6 @@ bower_components
 
 # jeykll
 _site/
+
+# editor
+.vscode/

@@ -6,6 +6,15 @@
 --breakpoint-lg: 992px;
 --breakpoint-xl: 1200px; */
 
+:root {
+  --color-primary: #f05f40;
+  --color-dark: #212529;
+  --color-secondary: #555555;
+  --color-faded: rgba(255, 255, 255, 0.7);
+  --font-sans: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Merriweather", "Helvetica Neue", Arial, sans-serif;
+}
+
 .bg-secondary {
   background-color: #555555 !important;
 }
@@ -16,6 +25,26 @@
 
 img.navbar-logo {
   max-height: 60px;
+}
+
+.section-small {
+  padding: 4rem 0;
+}
+
+.link {
+  font-family: var(--font-sans);
+  font-weight: bolder;
+  /* text-transform: uppercase; */
+  color: var(--color-primary);
+}
+
+.link:hover,
+.link:active {
+  color: white;
+}
+.link-light:hover,
+.link-light:active {
+  color: var(--color-dark);
 }
 
 /* Only override the laptop colors.
@@ -46,7 +75,13 @@ Don't provide a highlight for #page-top link */
 }
 
 header.masthead {
-  background-image: url("../img/maple-cover-lossy.jpg");
+  /* background-image: url("../img/maple-cover-lossy.jpg"); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("../img/community-garden-cover.jpg");
 }
 
 div.schedule-card-grid {
@@ -79,13 +114,24 @@ div.schedule-card-grid {
 }
 
 div.schedule-card {
-  background-color: #bfbfbf;
-  /* background-color: white; */
+  /* background-color: #bfbfbf; */
+  background-color: rgba(255, 255, 255, 0.9);
   /* background-color: #F05F40; */
   border-radius: 15px;
   padding: 10px;
   box-shadow: -3px 7px 9px 2px rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.schedule-label {
+  margin: 0;
+}
+
+.schedule-label-help-text {
+  line-height: 1;
+  font-size: 85%;
+  font-family: var(--font-sans);
+  color: var(--color-faded);
 }
 
 div.schedule-card.sunday {
@@ -116,12 +162,13 @@ div.schedule-grid {
 
 div.schedule-grid.sunday {
   grid-template-areas:
-    "time-12 foo"
-    "time-13 bib"
+    "time-12 food"
+    "time-13 bible"
     "time-14 .  ";
 }
 
-div.schedule-grid.tuesday {
+div.schedule-grid.tuesday,
+div.schedule-grid.thursday {
   grid-template-areas:
     "time-15 tut"
     "time-16 tut"
@@ -134,16 +181,11 @@ div.schedule-grid.wednesday {
     "time-15 tut"
     "time-16 tut"
     "time-17 tut"
-    "time-18 foo"
-    "time-19 bib";
-}
-
-div.schedule-grid.thursday {
-  grid-template-areas:
-    "time-15 tut"
-    "time-16 tut"
-    "time-17 tut"
-    "time-18 .  ";
+    "time-17-5 food"
+    "time-18 food"
+    "time-18-5 bible"
+    "time-19 bible"
+    "time-19-5 bible";
 }
 
 div.schedule-grid div.event {
@@ -161,12 +203,15 @@ div.schedule-grid div.tutoring {
 }
 
 div.schedule-grid div.food {
-  grid-area: foo;
-  background-color: white;
+  grid-area: food;
+  /* background-color: white; */
+  /* background-color: #bfbfbf; */
+  background-color: var(--color-secondary);
+  color: white;
 }
 
 div.schedule-grid div.bible {
-  grid-area: bib;
+  grid-area: bible;
   background-color: #222222;
   color: white;
 }
@@ -266,4 +311,12 @@ button.collapsed {
 #accordion-tutoring .row.card-header {
   margin-left: 0;
   margin-right: 0;
+}
+
+.responsive-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border: 1px white solid;
+  border-radius: 5px;
 }
