@@ -1,6 +1,5 @@
 /* Copyright (C) 2018 Maple House 501(c)3 */
 
-
 /* Bootstrap Breakpoints
 --breakpoint-sm: 576px;
 --breakpoint-md: 768px;
@@ -31,13 +30,13 @@ Don't provide a highlight for #page-top link */
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    color: #f05f40;
   }
 }
 
 #paypal-button {
   color: white;
-  background-color: #F05F40;
+  background-color: #f05f40;
   text-transform: none;
 }
 
@@ -47,25 +46,26 @@ Don't provide a highlight for #page-top link */
 }
 
 header.masthead {
-  background-image: url('../img/maple-cover-lossy.jpg');
+  background-image: url("../img/maple-cover-lossy.jpg");
 }
 
 div.schedule-card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "su"
-                       "tu"
-                       "we";
+  grid-template-areas:
+    "su"
+    "tu"
+    "we";
   grid-row-gap: 30px;
   margin: 20px 10px 20px 10px;
 }
 
-
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   div.schedule-card-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "su . "
-                         "tu we";
+    grid-template-areas:
+      "su . "
+      "tu we";
     grid-column-gap: 30px;
   }
 }
@@ -84,7 +84,8 @@ div.schedule-card {
   /* background-color: #F05F40; */
   border-radius: 15px;
   padding: 10px;
-  box-shadow: -3px 7px 9px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: -3px 7px 9px 2px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.schedule-card.sunday {
@@ -114,31 +115,35 @@ div.schedule-grid {
 }
 
 div.schedule-grid.sunday {
-  grid-template-areas: "time-12 foo"
-                       "time-13 bib"
-                       "time-14 .  ";
+  grid-template-areas:
+    "time-12 foo"
+    "time-13 bib"
+    "time-14 .  ";
 }
 
 div.schedule-grid.tuesday {
-  grid-template-areas: "time-15 tut"
-                       "time-16 tut"
-                       "time-17 tut"
-                       "time-18 .  ";
+  grid-template-areas:
+    "time-15 tut"
+    "time-16 tut"
+    "time-17 tut"
+    "time-18 .  ";
 }
 
 div.schedule-grid.wednesday {
-  grid-template-areas: "time-15 tut"
-                       "time-16 tut"
-                       "time-17 tut"
-                       "time-18 foo"
-                       "time-19 bib";
+  grid-template-areas:
+    "time-15 tut"
+    "time-16 tut"
+    "time-17 tut"
+    "time-18 foo"
+    "time-19 bib";
 }
 
 div.schedule-grid.thursday {
-  grid-template-areas: "time-15 tut"
-                       "time-16 tut"
-                       "time-17 tut"
-                       "time-18 .  ";
+  grid-template-areas:
+    "time-15 tut"
+    "time-16 tut"
+    "time-17 tut"
+    "time-18 .  ";
 }
 
 div.schedule-grid div.event {
@@ -150,7 +155,7 @@ div.schedule-grid div.event {
 
 div.schedule-grid div.tutoring {
   grid-area: tut;
-  background-color: #F05F40;
+  background-color: #f05f40;
   /* background-color: #555555; */
   color: white;
 }
@@ -172,7 +177,7 @@ section#contact a i {
 }
 
 .tab.active-tab {
-  background-color: #F05F40; /* FIXME: SCSS bg-primary */
+  background-color: #f05f40; /* FIXME: SCSS bg-primary */
   color: white;
   border-radius: 5px;
 }
@@ -191,8 +196,12 @@ section#contact a i {
 }
 
 @keyframes fadeEffect {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Same as .text-... but without !important */
@@ -236,7 +245,6 @@ section#contact a i {
     font-size: 1.2rem; /* Bootstrap -sm */
   }
 }
-
 
 @media only screen and (min-width: 369px) and (max-width: 499px) {
   h3.icon-font {
