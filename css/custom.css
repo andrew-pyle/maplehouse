@@ -162,9 +162,9 @@ div.schedule-grid {
 
 div.schedule-grid.sunday {
   grid-template-areas:
-    "time-12 food"
-    "time-13 bible"
-    "time-14 .  ";
+    "time-11-5 food"
+    "time-12-5 bible"
+    "time-13-5 bible";
 }
 
 div.schedule-grid.tuesday,
@@ -188,21 +188,21 @@ div.schedule-grid.wednesday {
     "time-19-5 bible";
 }
 
-div.schedule-grid div.event {
+.event {
   border-radius: 15px;
   padding-left: 10px;
   /* box-shadow value from: https://www.w3schools.com/css/css3_shadows.asp */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.schedule-grid div.tutoring {
+.event-tutoring {
   grid-area: tut;
   background-color: #f05f40;
   /* background-color: #555555; */
   color: white;
 }
 
-div.schedule-grid div.food {
+.event-food {
   grid-area: food;
   /* background-color: white; */
   /* background-color: #bfbfbf; */
@@ -210,7 +210,7 @@ div.schedule-grid div.food {
   color: white;
 }
 
-div.schedule-grid div.bible {
+.event-bible {
   grid-area: bible;
   background-color: #222222;
   color: white;
